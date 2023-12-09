@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:orderqueue/components/my_timeline_tile.dart';
-import 'package:timeline_tile/timeline_tile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -22,7 +21,7 @@ class _HomePageState extends State<HomePage> {
               isFirst: true,
               isLast: false,
               isPast: true,
-              eventCard: Text('ORDER ONGOING'),
+              eventCard: Text('ORDER PLACED'),
             ),
             //Middle Timeline
             MyTimelineTile(
@@ -36,7 +35,7 @@ class _HomePageState extends State<HomePage> {
               isFirst: false,
               isLast: true,
               isPast: false,
-              eventCard: Text('ORDER PLACED'),
+              eventCard: Text('ORDER DONE'),
             ),
           ],
         ),

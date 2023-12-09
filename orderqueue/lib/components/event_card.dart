@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class EventCard extends StatelessWidget {
   final bool isPast;
   final child;
+
   const EventCard({
     super.key,
     required this.isPast,
